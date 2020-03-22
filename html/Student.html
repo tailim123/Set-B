@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Student Grade Evaluator</title>
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/stylesheet-student.css">
+ </head>
+    <!--For Name Input-->
+ <body onload="getName()">
+    <div class="container-fluid mx-auto mt-5 p-3">
+        <h2 class="h2">Student Grade Evaluator</h2>
+        <hr>
+        <div class="table">
+        <div class="row">
+            <div class="col-4 pr-0" id="stdname1"><h5 class="h5 font-light">Student Name:</h5></div>
+            <div class="col p-0"><h5 class="h5 font-weight-bold font-italic" id="stdname2"></h5></div>
+        </div>
+        <div class="h5">List of Subjects:</div>
+        </div>
+        <div class="row">
+            <div class="col text-center font-weight-bold">Subject Title</div>
+            <div class="col text-center font-weight-bold">Grade</div>
+            <div class="col text-center font-weight-bold">Remarks</div>
+        </div>
+    <!--Grade Table-->
+        <div class="table my-2 mx-2" id="table1">
+        <div class="row my-2 pt-1">
+            <div class="col text-center font-weight-bold">Math</div>
+                <input type="text" class="col text-center" id="grmath">
+            <div class="col text-center font-italic font-weight-bold" id="mathRemark">Evaluation</div>
+        </div>
+        <div class="row my-2">
+            <div class="col text-center font-weight-bold">Science</div>
+                <input type="text" class="col text-center" id="grsci">
+            <div class="col text-center font-italic font-weight-bold" id="sciRemark">Evaluation</div>
+        </div>
+        <div class="row my-2">
+            <div class="col text-center font-weight-bold">English</div>
+                <input type="text" class="col text-center" id="greng">
+            <div class="col text-center font-italic font-weight-bold" id="engRemark">Evaluation</div>
+        </div>
+        <div class="row my-2">
+            <div class="col text-center font-weight-bold">Filipino</div>
+                <input type="text" class="col text-center" id="grfil">
+            <div class="col text-center font-italic font-weight-bold" id="filRemark">Evaluation</div>
+        </div>
+        <div class="row my-2">
+            <div class="col text-center font-weight-bold">P.E.</div>
+                <input type="text" class="col text-center" id="grpe">
+            <div class="col text-center font-italic font-weight-bold" id="peRemark">Evaluation</div>
+        </div>              
+        </div>
+        <div class="table my-3 font-weight-bold" id="ranktable">
+            <div class="row">
+            <div class="col ml-4 pr-0" id="stdrank">Student Rank:</div>
+            <div class="col-8 p-0 text-center " id="rank">-- Rank Here --</div>
+        </div>
+        <div class="row my-3 mx-3">
+            <button onclick="evaluateGrade()" class="font-weight-bold" id="btn">Evaluate</button>
+            <button onclick="clearGrade()" class="font-weight-bold mx-1" id="clearbtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+ </body>
+ </html>

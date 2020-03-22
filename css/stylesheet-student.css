@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+    background-size: cover;
+}
+.container-fluid{
+    height: 500px;
+    width: 500px;
+    border-radius: 27px;
+    background: linear-gradient(120deg, #756e6e9c, #ffffff);
+    box-shadow: inset -7px -7px 14px #666666, 
+            inset 7px 7px 14px #ffffff;
+}
+input{
+    border-radius: 15px;
+}
+hr{
+    border: 3px solid;
+}
+#table1{
+    height: 180px;
+    width: 450px;
+    border-radius: 10px;
+    background: #bec2c4;
+    box-shadow: inset -7px -7px 14px #666666, 
+    inset 7px 7px 14px #ffffff;
+}
+#ranktable{
+    color: #000000;
+}
+#btn{
+    height: 35px;
+    width: 130px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #00ff22, #94ff08);
+}
+#clearbtn{
+    height: 35px;
+    width: 130px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ff0000, #ff086f);
+}#btn:hover{
+    box-shadow: 0 0 2.5px #94ff08, 0 0 10px #94ff08, 0 0 20px #94ff08;
+    cursor: pointer;
+}
+#btn:hover:before{
+    box-shadow: none;
+}
+#btn:hover:after{
+    transition-delay: 0.75s;
+}
+#clearbtn:hover{
+    box-shadow: 0 0 2.5px #ff086f, 0 0 10px #ff086f, 0 0 20px #ff086f;
+    cursor: pointer;
+}
+#clearbtn:hover:before{
+    box-shadow: none;
+}
+#clearbtn:hover:after{
+    transition-delay: 0.75s;
+}
